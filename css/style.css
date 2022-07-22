@@ -126,7 +126,11 @@ body,
     margin: 20px 0;
 }
 
+
+
 .call-to-action {
+    display: flex !important;
+    align-items: center !important;
     display: block;
     text-decoration: none;
     color: #46C3B3;
