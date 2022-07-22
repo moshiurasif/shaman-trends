@@ -1,0 +1,645 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Global css */
+* {
+    overflow-x: hidden;
+}
+
+body,
+.btn-text {
+    font-family: 'Roboto',
+        sans-serif;
+
+
+}
+
+.success-color {
+    color: #44C979 !important;
+}
+
+.warning-color {
+    color: #FF6240 !important;
+}
+
+.mb-class {
+    margin-top: 3rem;
+}
+
+/* header style start here*/
+.header {
+    background-color: #0B0E16;
+}
+
+.menu li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 16px;
+}
+
+.menu li a:hover {
+    color: #179B96;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #179B96;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.social-icon i {
+    color: #179B96;
+}
+
+.social-icon:hover {
+    background: #179B96;
+}
+
+.social-icon:hover i {
+    color: #ffffff;
+}
+
+.btn-style-menu {
+    background-color: #179B96;
+    color: #ffffff;
+    padding: 0 15px;
+
+}
+
+.btn-style {
+    background-color: #179B96;
+    color: #ffffff;
+    padding: 8px 15px;
+
+}
+
+.btn-style:hover,
+.btn-style-menu:hover {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #179B96;
+}
+
+.btn-rocket-icon {
+    font-size: 14px;
+    color: white;
+    margin-right: 10px;
+}
+
+/* header style end here*/
+
+/* hero section style start here */
+
+.hero-section {
+    background: url(../images/Grid\ header.png),
+        url(../images/Glow\ header.png),
+        #0B0E16;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0;
+}
+
+.hero-section-content-left h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 48px;
+}
+
+.hero-section-content-left p,
+.algorithm p,
+.info p {
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+    margin: 20px 0;
+}
+
+.call-to-action {
+    display: block;
+    text-decoration: none;
+    color: #46C3B3;
+    word-spacing: 2px;
+    margin: 20px 0;
+}
+
+.call-to-action i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 10px;
+    margin-left: 5px;
+    border: 1px solid #46C3B3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.call-to-action:hover,
+.call-to-action:hover i {
+    color: #179B96;
+}
+
+.hero-section-content-right img {
+    mix-blend-mode: lighten;
+}
+
+/* hero section style end here */
+
+/* branding section & company logo section style start */
+.branding-section,
+.company-logo {
+    background-color: #0B0E16;
+    padding: 50px 0;
+    color: #fff;
+}
+
+/* branding section & company logo section style end */
+/* trading section style start */
+.trading-section {
+    background: url(../images/Bear\ 1.png), #0B0E16;
+}
+
+.benefit-section {
+    background: url(../images/Bull\ 1.png), #0B0E16;
+}
+
+.work-section {
+    background: url(../images/Earth\ 1.png), #0B0E16;
+}
+
+.trading-section,
+.benefit-section,
+.work-section {
+    background-color: #0B0E16;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    color: #fff;
+    padding: 200px 0;
+}
+
+/* similar h6 style */
+.trading-section h6,
+.benefit-section h6,
+.team-section h6,
+.trading-bots h6,
+.review h6 {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    background: #2A3041;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.trading-section h2,
+.benefit-section h2,
+.work-section h2,
+.algorithm h2,
+.trading-bots h2,
+.team-section h2,
+.review h2,
+.faq-section h2,
+.info h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0 30px 0;
+}
+
+.trading-section p i,
+.benefit-section p i,
+.work-section p i {
+    margin-right: 10px;
+}
+
+.window-close-icon {
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.check-icon {
+    background: green;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+/* trading section style end */
+/* algorithm-section start */
+.algorithm {
+    background-color: #0B0E16;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.box-style {
+    width: 190px;
+    height: 172px;
+    background-color: #151B2B;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.performance {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.performance-issue p {
+    font-size: 12px;
+}
+
+.p-box {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin-right: 5px;
+    padding: 0px 8px;
+}
+
+/* algorithm-section end */
+
+/* trading bots section style here */
+.trading-bots {
+    background: url(../images/card-bg.png), #0B0E16;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-blend-mode: color-dodge;
+    color: white;
+    text-align: center;
+    padding: 70px 0;
+
+}
+
+
+
+.trading-bots p {
+    color: #C2C7E0;
+    margin: 0px;
+}
+
+/* card design */
+.card-design {
+    background: #151B2B;
+    margin-top: 50px;
+    padding: 30px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card-design .card-top-icon {
+    margin-bottom: 10px;
+}
+
+.card-design h4 {
+    font-family: 'Lekton';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.card-design>p>small {
+    font-family: 'Lekton';
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.card-design p.dollar {
+    font-family: 'Lekton';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #D4733C;
+    margin-bottom: 0;
+}
+
+.card-property {
+    font-size: 15px;
+    font-weight: 400;
+    color: #C2C7E0;
+}
+
+
+.card-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.card-btn-design {
+    width: 80%;
+    background-color: #D4733C;
+    border-radius: 3px;
+    margin: 20px 0;
+}
+
+.card-btn-design2 {
+    background-color: #627EEA;
+}
+
+
+.card-btn-design:hover {
+    border: 1px solid #D4733C;
+    background-color: transparent;
+}
+
+.card-btn-design2:hover {
+    border: 1px solid #627EEA;
+}
+
+/* trading bots section style */
+
+/* team section style start here */
+.team-section,
+.review,
+.faq-section,
+footer {
+    background-color: #0B0E16;
+    color: white;
+    padding: 70px 0;
+}
+
+.card-body-style {
+    background-color: #1A2031;
+
+}
+
+.card-title-style {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-small-text-style {
+    font-size: 15px;
+    color: #C2C7E0;
+}
+
+.card-text-style {
+    font-size: 12px;
+    color: #A1A8CF;
+}
+
+/* team section style end here */
+
+/* review section style here */
+.review {
+    background: url(../images/Rectangle\ 540.png),
+        #0B0E16;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.review-card {
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.review-text {
+    background-color: #1A2031;
+    padding: 20px;
+    margin-bottom: 10px;
+    /* margin: 0 5px; */
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.author-image {
+    margin-right: 10px;
+}
+
+.author-name {
+    font-size: 12px;
+}
+
+
+/* review section style here */
+
+/* faq section style here */
+.accordion-item-style {
+    background-color: #1A2031;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.accordion-btn-text-style {
+    background-color: #1A2031 !important;
+    color: white !important;
+    padding: 0.3rem 1.25rem;
+}
+
+.accordion-btn-text-style:focus {
+    box-shadow: none;
+}
+
+.accordion-body-style {
+    padding: 1rem 1.25rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+    mix-blend-mode: luminosity;
+}
+
+/* faq section style here */
+
+/* info section style here */
+.info {
+    background-color: #179B96;
+    color: white;
+    padding: 30px 0;
+}
+
+.info h2 {
+    margin-bottom: 10px;
+}
+
+.info-btn-style {
+    background-color: #0B0E16;
+}
+
+.info-btn-style:hover {
+    border: 1px solid #0B0E16;
+}
+
+/* info section style here */
+
+/* footer section style start */
+.footer-logo {
+    margin-bottom: 5px;
+}
+
+.footer-logo p {
+    margin-left: 65px;
+}
+
+.only-for-mobile-version {
+    display: none;
+}
+
+.footer-menu-header {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer-menu-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: #46C3B3;
+    cursor: pointer;
+}
+
+.footer-description {
+    border-top: 1px solid rgba(226, 233, 243, 0.2);
+    border-bottom: 1px solid rgba(226, 233, 243, 0.2);
+    padding: 1rem 0;
+    margin-bottom: 5px;
+}
+
+.footer-description p {
+    margin: 10px 0;
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+/* footer section style end */
+
+
+/* extra test */
+.review {
+    position: relative;
+}
+
+.bg-gradient {
+    position: absolute;
+    width: 116px;
+    height: 1512px;
+    left: -335px;
+    top: 264px;
+
+    background: linear-gradient(180deg, rgba(79, 42, 186, 0.7) 0%, rgba(27, 25, 135, 0.7) 100%);
+    mix-blend-mode: lighten;
+    opacity: 0.8;
+    filter: blur(316px);
+    transform: rotate(-90deg);
+}
+
+/* css media query */
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    .menu {
+        text-align: center
+    }
+
+    .hero-section-content-left {
+        padding: 30px 20px;
+    }
+
+    .hero-section-content-right img {
+        display: none;
+    }
+
+    .branding-section,
+    .company-logo {
+        text-align: center;
+    }
+
+    .branding-section img {
+        margin-bottom: 20px;
+    }
+
+    .trading-section,
+    .benefit-section,
+    .work-section,
+    .algorithm,
+    .trading-bots,
+    .review,
+    .info {
+        padding: 50px 20px;
+    }
+
+    .btn-style-for-mobile {
+        width: 100%;
+    }
+
+    .cm-logo {
+        margin-bottom: 30px;
+    }
+
+    .trading-bots {
+        background-image: none;
+    }
+
+    .tradings-bots h6,
+    .benefit-section h6,
+    .trading-section h6,
+    .review h6,
+    .trading-bots h6,
+    .team-section h6 {
+        font-size: 11px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .only-for-mobile-version {
+        display: block;
+    }
+
+    .only-for-desktop-version {
+        display: none;
+    }
+
+    .only-for-desktop-version p {
+        margin-bottom: 5px;
+    }
+
+    .box-style-for-mobile {
+        background: #151B2B;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+
+    .only-for-mobile-version {
+        margin-top: 30px;
+    }
+
+    .algorithm p {
+        margin: 0;
+    }
+}
+
+/* css media query */
