@@ -562,6 +562,20 @@ footer {
 
 /* css media query */
 @media screen and (min-width:320px) and (max-width:767px) {
+    .logo {
+        width: 40%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .mobile-nav-design {
+        display: flex;
+        align-items: center;
+    }
+
+
 
     .menu {
         text-align: center
@@ -606,7 +620,6 @@ footer {
         background-image: none;
     }
 
-    .tradings-bots h6,
     .benefit-section h6,
     .trading-section h6,
     .review h6,
@@ -645,6 +658,25 @@ footer {
     .algorithm p {
         margin: 0;
     }
+
+    .trading-section,
+    .benefit-section,
+    .work-section {
+        overflow-x: visible !important;
+    }
+
+
+
+    .social-top-margin ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .social-top-margin {
+        margin-top: 8px !important;
+    }
+
 }
 
 /* css media query */
