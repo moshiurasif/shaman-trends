@@ -290,10 +290,9 @@ body,
 
 /* trading bots section style here */
 .trading-bots {
-    background: url(../images/card-bg.png), #0B0E16;
+    background: url(../images/Frame.png), #0B0E16;
     background-repeat: no-repeat;
     background-size: auto;
-    background-blend-mode: color-dodge;
     color: white;
     text-align: center;
     padding: 70px 0;
