@@ -197,6 +197,30 @@ body,
     padding: 200px 0;
 }
 
+.work-section {
+    background-size: 90%;
+    background-position: left;
+}
+
+.work-records {
+    position: relative;
+    bottom: 160px;
+    left: 120px;
+}
+
+.p-f-design {
+    font-family: 'Lekton';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.p-s-design {
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
 /* similar h6 style */
 .trading-section h6,
 .benefit-section h6,
@@ -620,6 +644,7 @@ footer {
         background-repeat: no-repeat;
         background-position-x: center;
     }
+
 
     .trading-section,
     .benefit-section,
