@@ -598,14 +598,41 @@ footer {
         margin-bottom: 20px;
     }
 
+    .trading-section {
+        background: url(../images/Bear-mobile.png),
+            #0B0E16;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position-x: right;
+    }
+
+    .benefit-section {
+        background: url(../images/bull-mobile.png),
+            #0B0E16;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position-x: right;
+    }
+
+    .work-section {
+        background: url(../images/Earth-mobile.png),
+            #0B0E16;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+
     .trading-section,
     .benefit-section,
     .work-section,
     .algorithm,
     .trading-bots,
     .review,
-    .info {
-        padding: 50px 20px;
+    .info,
+    footer,
+    .team-section,
+    .review-section {
+        padding: 50px 10px;
     }
 
     .btn-style-for-mobile {
