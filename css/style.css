@@ -1,5 +1,5 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 /* Global css */
 * {
@@ -34,12 +34,12 @@ body,
 .menu li a {
     font-size: 16px;
     font-weight: 700;
-    color: #ffffff;
+    color: #ffffff !important;
     margin: 0 16px;
 }
 
 .menu li a:hover {
-    color: #179B96;
+    color: #179B96 !important;
 }
 
 .social-icon {
@@ -101,12 +101,14 @@ body,
 /* hero section style start here */
 
 .hero-section {
+    position: relative;
     background: url(../images/Grid\ header.png),
         url(../images/Glow\ header.png),
         #0B0E16;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 50px 0;
+    overflow: hidden;
 }
 
 .hero-section-content-left h1 {
@@ -161,6 +163,23 @@ body,
     mix-blend-mode: lighten;
 }
 
+.available-on-btn {
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: rgb(228, 230, 241);
+    background: rgb(11, 14, 22);
+    text-align: center;
+    padding: 4px 20px;
+}
+
 /* hero section style end here */
 
 /* branding section & company logo section style start */
@@ -174,6 +193,7 @@ body,
 
 /* branding section & company logo section style end */
 /* trading section style start */
+
 .trading-section {
     background: url(../images/Bear\ 1.png), #0B0E16;
 }
@@ -194,18 +214,11 @@ body,
     background-size: 100%;
     background-position: center;
     color: #fff;
-    padding: 200px 0;
-}
-
-.work-section {
-    background-size: 90%;
-    background-position: left;
+    padding: 130px 0;
 }
 
 .work-records {
-    position: relative;
-    bottom: 160px;
-    left: 120px;
+    line-height: 0;
 }
 
 .p-f-design {
@@ -213,12 +226,14 @@ body,
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
+    line-height: 38px;
 }
 
 .p-s-design {
     font-weight: 500;
     font-size: 15px;
     opacity: 0.5;
+    line-height: 38px;
 }
 
 /* similar h6 style */
@@ -246,17 +261,24 @@ body,
 .trading-bots h2,
 .team-section h2,
 .review h2,
-.faq-section h2,
+.faq-section h1,
 .info h2 {
     font-size: 40px;
     font-weight: 700;
     margin: 20px 0 30px 0;
 }
 
-.trading-section p i,
-.benefit-section p i,
-.work-section p i {
-    margin-right: 10px;
+.trading-section p,
+.benefit-section p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #E4E6F1 !important;
+}
+
+.times-icon,
+.check-icon {
+    margin-right: 12px;
 }
 
 .window-close-icon {
@@ -264,13 +286,6 @@ body,
     font-weight: 700;
     font-size: 20px;
     margin-right: 10px;
-}
-
-.check-icon {
-    background: green;
-    font-size: 12px;
-    padding: 2px 4px;
-    border-radius: 5px;
 }
 
 /* trading section style end */
@@ -316,91 +331,124 @@ body,
 .trading-bots {
     background: url(../images/Frame.png), #0B0E16;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-position: bottom;
     color: white;
     text-align: center;
     padding: 70px 0;
 
 }
 
-
-
-.trading-bots p {
-    color: #C2C7E0;
-    margin: 0px;
-}
-
 /* card design */
 .card-design {
-    background: #151B2B;
-    margin-top: 50px;
-    padding: 30px 0;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    padding: 32px 10px 20px;
 }
 
-.card-design .card-top-icon {
-    margin-bottom: 10px;
+.card-list-icon {
+    margin-right: 12px;
 }
 
-.card-design h4 {
+.card-title-design {
     font-family: 'Lekton';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    margin-bottom: 0;
+    line-height: 55px;
+    margin: 0;
 }
 
-.card-design>p>small {
+.card-sub-title-design {
     font-family: 'Lekton';
     font-style: normal;
-    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #E4E6F1;
 }
 
-.card-design p.dollar {
+.card1-dollar-design {
     font-family: 'Lekton';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
+    margin: 0;
+    line-height: 68px;
     color: #D4733C;
-    margin-bottom: 0;
+}
+
+.card-list-design {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.card-value {
+    font-weight: 400;
+    font-size: 15px;
+    color: #C2C7E0;
+    margin-right: 12px;
+}
+
+.card-value-1 {
+    margin-left: 12px;
 }
 
 .card-property {
+    font-weight: 500;
     font-size: 15px;
-    font-weight: 400;
-    color: #C2C7E0;
+    color: #FFFFFF;
 }
 
-
-.card-value {
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    margin-left: 10px;
+.now-live-highlight {
+    width: 46px;
+    height: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 16px;
+    background: #627EEA;
+    color: #FFFFFF;
+    padding: 2px 6px 1px;
+    border-radius: 2px;
 }
 
 .card-btn-design {
-    width: 80%;
-    background-color: #D4733C;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 40px;
+    padding: 10px 0px;
     border-radius: 3px;
-    margin: 20px 0;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
-.card-btn-design2 {
-    background-color: #627EEA;
+.card1-btn-design {
+    background: #D4733C;
+}
+
+.card2-btn-design {
+    background: #627EEA;
 }
 
 
-.card-btn-design:hover {
+.card-btn-design:focus {
+    box-shadow: none;
+}
+
+.card1-btn-design:hover {
+    background: transparent;
+    color: #ffffff;
     border: 1px solid #D4733C;
-    background-color: transparent;
 }
 
-.card-btn-design2:hover {
+.card2-btn-design:hover {
+    background: transparent;
+    color: #ffffff;
     border: 1px solid #627EEA;
 }
 
@@ -416,9 +464,24 @@ footer {
     padding: 70px 0;
 }
 
+.card {
+    background-color: #0B0E16 !important;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+}
+
 .card-body-style {
     background-color: #1A2031;
-
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(84px);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .card-title-style {
@@ -429,11 +492,13 @@ footer {
 .card-small-text-style {
     font-size: 15px;
     color: #C2C7E0;
+    line-height: 20px;
 }
 
 .card-text-style {
     font-size: 12px;
     color: #A1A8CF;
+    line-height: 20px;
 }
 
 /* team section style end here */
@@ -484,8 +549,13 @@ footer {
 
 .accordion-btn-text-style {
     background-color: #1A2031 !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
     color: white !important;
-    padding: 0.3rem 1.25rem;
+    padding: 16px 16px 16px 24px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 4px;
 }
 
 .accordion-btn-text-style:focus {
@@ -493,11 +563,37 @@ footer {
 }
 
 .accordion-body-style {
-    padding: 1rem 1.25rem;
+    padding: 16px 16px 16px 24px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #E4E6F1;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 4px;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(../images/aroow.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    transition: transform .2s ease-in-out;
 }
 
 .accordion-button:not(.collapsed)::after {
-    mix-blend-mode: luminosity;
+    background-image: url(../images/aroow.png);
+    transform: rotate(-180deg);
+    background-size: 80%;
+    background-position: center;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
 }
 
 /* faq section style here */
@@ -529,6 +625,10 @@ footer {
 }
 
 .footer-logo p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E4E6F1;
     margin-left: 65px;
 }
 
@@ -602,6 +702,14 @@ footer {
 
     .menu {
         text-align: center
+    }
+
+    .hero-section {
+        background-size: cover;
+    }
+
+    .available-on-btn {
+        bottom: -8px;
     }
 
     .hero-section-content-left {
@@ -726,6 +834,15 @@ footer {
 
     .social-top-margin {
         margin-top: 8px !important;
+    }
+
+    .company-logo {
+        padding: 30px 0 0 0 !important;
+
+    }
+
+    .company-logo img {
+        margin-bottom: 20px;
     }
 
 }
