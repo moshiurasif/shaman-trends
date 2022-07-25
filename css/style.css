@@ -6,7 +6,12 @@
     overflow-x: hidden;
 }
 
-body,
+body {
+    position: relative;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
 .btn-text {
     font-family: 'Roboto',
         sans-serif;
@@ -100,6 +105,7 @@ body,
 
 /* hero section style start here */
 
+
 .hero-section {
     position: relative;
     background: url(../images/Grid\ header.png),
@@ -109,6 +115,25 @@ body,
     background-size: 100% 100%;
     padding: 50px 0;
     overflow: hidden;
+}
+
+.popup-container {
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0B0E16;
+    padding: 1.5rem 0;
+    z-index: 1;
+    display: none;
+    width: 93vw;
+}
+
+.popup-close-icon {
+    text-align: right;
+    position: relative;
+    right: 60px;
+    cursor: pointer;
 }
 
 .hero-section-content-left h1 {
@@ -845,6 +870,8 @@ footer {
         margin-bottom: 20px;
     }
 
-}
+    .popup-close-icon {
+        right: 0px;
+    }
 
-/* css media query */
+    /* css media query */

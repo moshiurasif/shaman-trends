@@ -16,9 +16,31 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Shaman Trends</title>
+
 </head>
 
 <body>
+
+    <div class="container">
+        <!-- popup video will show here when video button is clicked  -->
+        <div class="row">
+            <div class="col-12">
+
+                <div class="popup-container text-center">
+                    <div class="popup-close-icon"><img src="images/popup-close-icon.png" alt="">
+                    </div>
+                    <div class="popup-video">
+                        <iframe width="1000" height="565" src="https://www.youtube.com/embed/fQ_-eTEKFA4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- popup video show ending tag -->
+    </div>
     <!-- header section start -->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -96,6 +118,7 @@
     <!-- hero section start -->
     <section class="hero-section">
         <div class="container">
+
             <div class="row d-flex align-items-center">
                 <div class="col-md-6">
                     <div class="hero-section-content-left">
@@ -108,8 +131,11 @@
                             Our Trading Bots are performance-verified, working 24/7 to deliver better returns than
                             classic investing methods.
                         </p>
-                        <a href="#" class="call-to-action">See our intro video <i class="fas fa-play play-icon"></i>
+                        <a href="#" class="call-to-action" id="popup-btn">See our intro video <i
+                                class="fas fa-play play-icon"></i>
                         </a>
+
+
                         <button class="btn btn-style" type="submit">
                             <span class="btn-text">Try Shaman Trends for free</span>
                         </button>
@@ -126,7 +152,12 @@
                     <div class="available-on-btn">Available on</div>
                 </div>
             </div>
+
         </div>
+
+
+
+
 
     </section>
     <!-- hero section end -->
@@ -426,7 +457,7 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="card card-design">
                         <div class="card-body">
                             <h5 class="card-title"><img src="images/bitcoin 5.png" class="img-fluid" alt=""></h5>
@@ -442,8 +473,8 @@
                                 </p>
                                 <p class="card-text card-text-design">
                                     <span class="card-list-icon"><img src="images/two.png" alt=""></span>
-                                    <span class="card-value">Verified Record:</span>
-                                    <span class="card-property">2+ months</span>
+                                    <span class="card-value">Verified Track Record:</span>
+                                    <span class="card-property">12+ months</span>
                                 </p>
                                 <p class="card-text card-text-design">
                                     <span class="card-list-icon"><img src="images/three.png" alt=""></span>
@@ -473,7 +504,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="card card-design">
                         <div class="card-body">
                             <h5 class="card-title"><img src="images/Group.png" class="img-fluid" alt=""></h5>
@@ -1106,9 +1137,26 @@
         </div>
     </footer>
     <!-- footer section end -->
+    <!-- jquery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- bootstrap links  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            // popup show
+            $(".call-to-action").click(function () {
+                $(".popup-container").show();
+            })
+            // popup hide
+            $(".popup-close-icon").click(function () {
+                $(".popup-container").hide();
+            })
+        })
     </script>
 
 
